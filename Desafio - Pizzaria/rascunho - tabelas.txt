@@ -1,0 +1,32 @@
+CREATE TABLE Clientes:
+- CPF: VARCHAR PRIMARY KEY
+- Nome: VARCHAR (255)
+- Endereço: VARCHAR (255)
+- Email: VARCHAR (255)
+- Data_Nascimento: DATE
+
+CREATE TABLE Funcionarios:
+- ID_Funcionario: INT PRIMARY KEY
+- Nome: VARCHAR (255)
+- Data_Nascimento: DATE
+- Cargo: VARCHAR (255)
+- Endereço: VARCHAR (255)
+- Salário: DOUBLE
+
+CREATE TABLE Pizza:
+- ID_Pizza: INT PRIMARY KEY
+- Sabor: VARCHAR (255)
+- Categoria (doce ou salgada): VARCHAR (255)
+- Quantidade: INT
+- Preço: DOUBLE
+
+CREATE TABLE Pedidos:
+- ID_Pedido: INT PRIMARY KEY
+- ID_Pizza - CHAVE ESTRANGEIRA
+- Pagamento: VARCHAR (255)
+
+CREATE TABLE Vendas
+- ID_Venda: INT PRIMARY KEY
+- Retirada (presencial ou delivery): VARCHAR (255)
+- Prazo: VARCHAR (255)
+- Quantidade: VARCHAR (255)

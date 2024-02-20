@@ -6,7 +6,8 @@ CREATE TABLE Clientes:
 - Data_Nascimento: DATE
 
 CREATE TABLE Produtos:
-- Cod_Barras: INT PRIMARY KEY
+- ID_Produto: INT PRIMARY KEY
+- Cod_Barras: INT
 - Quantidade: INT
 - Categoria: VARCHAR (255)
 - Marca: VARCHAR (255)
