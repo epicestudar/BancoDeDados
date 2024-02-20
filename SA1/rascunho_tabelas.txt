@@ -1,0 +1,36 @@
+CREATE TABLE Clientes:
+- CPF: VARCHAR PRIMARY KEY
+- Nome: VARCHAR (255)
+- Endereço: VARCHAR (255)
+- Email: VARCHAR (255)
+- Data_Nascimento: DATE
+
+CREATE TABLE Produtos:
+- Cod_Barras: INT PRIMARY KEY
+- Quantidade: INT
+- Categoria: VARCHAR (255)
+- Marca: VARCHAR (255)
+- Preço: DOUBLE
+
+CREATE TABLE Pedidos:
+- ID_Pedido: INT PRIMARY KEY
+- Comprador: VARCHAR (255)
+- CPF_Comprador: VARCHAR (255)
+- Endereço_Comprador: VARCHAR (255)
+- Cod_Barras: INT
+- Data: DATETIME
+- Pagamento: VARCHAR (255)
+
+CREATE TABLE Funcionarios:
+- ID_Funcionario: INT PRIMARY KEY
+- Nome: VARCHAR (255)
+- Data_Nascimento: DATE
+- Cargo: VARCHAR (255)
+- Endereço: VARCHAR (255)
+- Salário: DOUBLE
+
+CREATE TABLE Vendas
+- ID_Venda: INT PRIMARY KEY
+- Cod_Produto: INT
+- Prazo: VARCHAR (255)
+- Quantidade: VARCHAR (255)
