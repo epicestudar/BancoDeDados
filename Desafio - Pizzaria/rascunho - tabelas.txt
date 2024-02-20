@@ -19,6 +19,7 @@ CREATE TABLE Pizza:
 - Categoria (doce ou salgada): VARCHAR (255)
 - Quantidade: INT
 - Preço: DOUBLE
+- Adicional (refri, suco, confetes, etc): VARCHAR (255)
 
 CREATE TABLE Pedidos:
 - ID_Pedido: INT PRIMARY KEY
